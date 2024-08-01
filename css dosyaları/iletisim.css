@@ -1,0 +1,285 @@
+body {
+    margin-top: 60px; 
+}
+header {
+    width: 100%;
+    background-color:#173251; 
+    border-bottom: 1px solid #ccc; 
+    z-index: 1000; 
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.hizmetler-title{
+    background-image: url(../animation-images/Blur_2.png);
+    background-size: 400px;
+    background-position-y:300px ;
+    height:150px ;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color:#173251;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top:100px ;
+}
+.iletisim-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.iletisim-konum, .iletisim-bilgiler {
+    width: 45%;
+}
+
+.iletisim-konum h2, .iletisim-bilgiler h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.iletisim-konum p, .iletisim-bilgiler p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* İletişim Formu */
+.iletisim-right {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iletisim-title h1 {
+    margin-left: 120px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.iletisim-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100½;
+    padding-right: 100px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 500px) {
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-group input {
+        width: 100%;
+    }
+}
+#iletisim-write{
+    font-size: 58px;
+    color:#6a5656;
+}
+@media (max-width: 685px) {
+    #iletisim-write{
+        font-size: 40px;
+    }
+}
+#konum{
+    padding-left: 80px;
+    padding-top: 20px;
+}
+.iletisim-bilgiler {
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item svg {
+    margin-right: 10px; 
+  }
+  
+  .contact-item p {
+    margin: 0; 
+  }
+  .iletisim-bilgiler h2 {
+    max-width: 100½;
+    margin-top: 120px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 45px;
+}
+@media (max-width: 1240px) {
+    .iletisim-right{
+        flex-direction: column;
+    }
+    .iletisim-inputs{
+        padding: 0;
+    }
+    #iletisim-write{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 980px) {
+    .iletisim-container {
+        flex-direction: column;
+        align-items: center; 
+        
+    }
+
+    .iletisim-konum {
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+    }
+
+    #konum {
+        padding: 0;
+        width: 100%; 
+        max-width: 100%; 
+        height: 400px; 
+    } 
+}
+#input{
+    border: #ddd;
+    border-radius: 10px;
+    height: 50px;
+}
+.iletisim-title{
+    text-align: center;
+}
+
+.iletisim-bilgiler {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+  #iletisim-yazi {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+
+  
+  .iletisim-bilgiler {
+    max-width: 800px;
+    margin-left: 150px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #iletisim-yazi {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+
+.contact-item svg {
+    width: 24px; 
+    height: 24px;
+    fill: #4a90e2; 
+    margin-right: 15px; 
+}
+
+
+.contact-item p {
+    margin: 0; 
+    font-size: 16px;
+    color: #333; 
+}
+
+.contact-item strong {
+    color: #333; 
+}
+.contact-item:last-child {
+    border-bottom: none;
+  }
+/* Hover efekti */
+.contact-item:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  .footer3{
+    background-color:#173251;
+    margin-top: -30px;
+}
+.footer3, .haklar-write{
+    color: white;
+}
+.footer3, .haklar-sözlesme{
+    text-align: right;
+}
+.footer3 p{
+    text-align: center;
+}
+
+.footer3 a{
+    font: optional;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    list-style-type:armenian;
+}
+.footer3 a:hover{
+    color: #0056b3;
+}
+
+.footer3giz-söz{
+    margin-left: 50px;
+}

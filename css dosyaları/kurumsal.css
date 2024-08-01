@@ -1,0 +1,166 @@
+body {
+    margin-top: 60px; 
+}
+.kurumsal-title{
+    background-image: url(../animation-images/Blur_2.png);
+    background-size: 400px;
+    background-position-y:300px ;
+    height:150px ;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color:#173251;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top:100px ;
+}
+@media (max-width: 1280px) {
+    .ara-reklam{
+        margin-top: 310px;
+    }
+}
+@media (max-width: 680px) {
+    
+    #reklam-right{
+        font-size: 25px;  
+    }
+}
+.vizyon-misyon-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    flex-wrap: wrap; 
+}
+
+.vizyon,
+.misyon {
+    flex: 1;
+    padding: 20px; 
+    border: 1px solid #ccc; 
+}
+
+.vizyon-title,
+.misyon-title {
+    text-align: center; 
+}
+
+.vizyon-p,
+.misyon-p {
+    margin-top: 10px; 
+}
+.vizyon-p{
+   padding-left: 80px;
+   text-align: center;
+   font-size: 18px;
+   padding-right: 40px;
+   font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+.misyon-p{
+    padding-left: 40px;
+    text-align: center;
+    font-size: 18px;
+    padding-right: 80px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+@media (max-width: 1000px) {
+    .vizyon,
+    .misyon {
+        flex-basis: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+@media (max-width: 600px) {
+
+.vizyon-p, .misyon-p{
+    padding: 0;
+    font-size: 17px;
+
+}
+}
+@media (max-width: 500px){
+    .vizyon-p, .misyon-p{
+        font-size: 14px;
+        padding: 0;
+    }
+}
+
+header {
+    width: 100%;
+    background-color:#173251; 
+    border-bottom: 1px solid #ccc; 
+    z-index: 1000; 
+}
+
+/* Sabit Header Stili */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.vizyon-title h1, .misyon-title h1 {
+    animation: slideIn 1s ease-out;
+}
+
+.vizyon-p, .misyon-p {
+    animation: fadeIn 2s ease-out;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.vizyon {
+    margin-bottom: 40px;
+}
+
+.misyon {
+    margin-bottom: 40px;
+}
+
+.vizyon-title, .misyon-title {
+    animation: bounce 1s infinite;
+    margin-bottom: 20px;
+}.footer3{
+    background-color:#173251;
+    margin-top: -30px;
+}
+.footer3, .haklar-write{
+    color: white;
+}
+.footer3, .haklar-sözlesme{
+    text-align: right;
+}
+.footer3 p{
+    text-align: center;
+}
+
+.footer3 a{
+    font: optional;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    list-style-type:armenian;
+}
+.footer3 a:hover{
+    color: #0056b3;
+}
+
+.footer3giz-söz{
+    margin-left: 50px;
+}

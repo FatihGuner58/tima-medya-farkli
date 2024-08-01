@@ -1,0 +1,131 @@
+body {
+    margin-top: 60px; 
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color:#173251; 
+    border-bottom: 1px solid #ccc; 
+    z-index: 1000; 
+}
+.hizmetler-title{
+    background-image: url(../animation-images/Blur_2.png);
+    background-size: 400px;
+    background-position-y:300px ;
+    height:150px ;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color:#173251;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top:100px ;
+}
+#hizmetler-right{
+    margin-top: -30px;
+}
+.hizmetler-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 sütunlu grid */
+    gap: 20px; 
+    margin: 20px auto;
+    max-width: 1200px; 
+    padding: 0 20px; 
+}
+
+.hizmetler-item {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    padding: 20px; 
+    text-align: center; 
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.hizmetler-item h2 {
+    font-size: 1.25rem; 
+    margin-bottom: 10px; 
+}
+
+.hizmetler-item p {
+    font-size: 1rem; 
+    color: #30cda5; 
+}
+
+
+@media (max-width: 1200px) {
+    .hizmetler-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 sütunlu grid */
+    }
+}
+
+@media (max-width: 900px) {
+    .hizmetler-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 sütunlu grid */
+    }
+}
+
+@media (max-width: 600px) {
+    .hizmetler-container {
+        grid-template-columns: 1fr; /* Tek sütunlu grid */
+    }
+}
+#icon{
+    width: 250px;
+    height: 180px;
+}
+.hizmetler-item:hover{
+    background-color: #173251;
+    transition: background-color 0.7s ease; /* Geçiş efekti */
+    
+}
+#hizmetler-p{
+    font-size: 20px;
+    font-weight: bold;
+}
+img{
+    border-radius: 15px;
+}
+
+.hizmetler-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.hizmetler-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer3{
+    background-color:#173251;
+    margin-top: -30px;
+}
+.footer3, .haklar-write{
+    color: white;
+}
+.footer3, .haklar-sözlesme{
+    text-align: right;
+}
+.footer3 p{
+    text-align: center;
+}
+
+.footer3 a{
+    font: optional;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    list-style-type:armenian;
+}
+.footer3 a:hover{
+    color: #0056b3;
+}
+
+.footer3giz-söz{
+    margin-left: 50px;
+}
